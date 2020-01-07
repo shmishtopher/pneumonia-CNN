@@ -35,6 +35,23 @@ Accuracy vs Epoch & Loss vs Epoch
 ## Architecture
 <img src="images/nn.svg" />
 
+| Layer Type      | Activation | Parameters               |
+|-----------------|------------|--------------------------|
+| Conv 2D         | RelU       | 3x3 kernel<br>32 filters |
+| Max Pool 2D     | None       | 2x2 stride               |
+| Conv 2D         | RelU       | 3x3 kernel<br>32 filters |
+| Max Pool 2D     | None       | 2x2 stride               |
+| Conv 2D         | RelU       | 3x3 kernel<br>64 filters |
+| Max Pool 2D     | None       | 2x2 stride               |
+| Conv 2D         | RelU       | 3x3 kernel<br>64 filters |
+| Max Pool 2D     | None       | 2x2 stride               |
+| Flatten         | None       | None                     |
+| Fully Connected | RelU       | 128 units                |
+| Dropout         | None       | 0.5 rate                 |
+| Fully Connected | RelU       | 128 units                |
+| Dropout         | None       | 0.5 rate                 |
+| Fully Connected | Softmax    | 2 units                  |
+
 
 ## Data
 The dataset can be found [here](https://data.mendeley.com/datasets/rscbjbr9sj/2)
