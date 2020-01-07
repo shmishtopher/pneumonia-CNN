@@ -7,8 +7,8 @@
   "scripts": {
     "test": "tensorboard.exe --port 4040 --logdir logs & powershell.exe /c start http://localhost:4040 & node.exe src/main.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Christopher Kareem Schmitt (Shmish) <shmish90@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@tensorflow/tfjs-node": "^1.5.1"
   }
