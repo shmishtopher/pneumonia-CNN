@@ -4,15 +4,19 @@ Scanning chest x-rays for pneumonia using a deep convolutional network
 
 ## Training results
 Accuracy vs Batch
-![batch_acc](images/batch_acc.svg)
+<img src="images/batch_acc.svg" width="300px" />
+
 Loss vs Batch
-![batch_loss](images/batch_loss.svg)
+<img src="images/batch_loss.svg" width="300px" />
+
 Accuracy vs Epoch
-![epoch_acc](images/epoch_acc.svg)
+<img src="images/epoch_acc.svg" width="300px" />
+
 Loss vs Epoch
-![epoch_loss](images/epoch_loss.svg)
+<img src="images/epoch_loss.svg" width="300px" />
 
 0.9375 final validation accuracy
+
 0.9828 final trainging accuracy
 
 
