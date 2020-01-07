@@ -3,8 +3,8 @@ Scanning chest x-rays for pneumonia using a deep convolutional network
 
 
 ## Example
-<img src="images/HEALTHY" width="300px" height="300px" />
-<img src="images/SICK" width="300px" heaight="300px" />
+<img src="images/HEALTHY.jpeg" width="300px" height="300px" />
+<img src="images/SICK.jpeg" width="300px" heaight="300px" />
 
 A healthy and diseased x-rays next to each other.
 
