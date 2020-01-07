@@ -33,7 +33,7 @@ Accuracy vs Epoch & Loss vs Epoch
 
 
 ## Architecture
-<img src="images/nn,svg" />
+<img src="images/nn.svg" />
 
 
 ## Data
