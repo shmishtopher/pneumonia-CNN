@@ -11,5 +11,5 @@ createModel().fitDataset(trainDataset, {
   epochs: 20,
   verbose: 1,
   validationData: validationDataset,
-  callbacks: tf.node.tensorBoard('logs', {updateFreq: 'batch'}),
+  callbacks: tf.node.tensorBoard('../logs', {updateFreq: 'batch'}),
 })
