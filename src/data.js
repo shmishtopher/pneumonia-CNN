@@ -2,16 +2,16 @@ import { default as tf } from '@tensorflow/tfjs-node'
 import { promises as fs } from 'fs'
 
 
-const healthyTrain = fs.readdir('../data/train/NORMAL', {withFileTypes: true})
-const healthyValidate = fs.readdir('../data/val/NORMAL', {withFileTypes: true})
-const pneumoniaTrain = fs.readdir('../data/train/PNEUMONIA', {withFileTypes: true})
-const pneumoniaValidate = fs.readdir('../data/val/PNEUMONIA', {withFileTypes: true})
+const healthyTrain = fs.readdir('./data/train/NORMAL', {withFileTypes: true})
+const healthyValidate = fs.readdir('./data/val/NORMAL', {withFileTypes: true})
+const pneumoniaTrain = fs.readdir('./data/train/PNEUMONIA', {withFileTypes: true})
+const pneumoniaValidate = fs.readdir('./data/val/PNEUMONIA', {withFileTypes: true})
 
 
 export async function* train() {
   for (const [healthy, sick] of zip(...await Promise.all([healthyTrain, pneumoniaTrain]))) {
-    const healthyPath = `../data/train/NORMAL/${healthy.name}`
-    const sickPath = `../data/train/PNEUMONIA/${sick.name}`
+    const healthyPath = `./data/train/NORMAL/${healthy.name}`
+    const sickPath = `./data/train/PNEUMONIA/${sick.name}`
 
     const healthyFile = fs.readFile(healthyPath)
     const sickFile = fs.readFile(sickPath)
@@ -30,8 +30,8 @@ export async function* train() {
 
 export async function* validation() {
   for (const [healthy, sick] of zip(...await Promise.all([healthyValidate, pneumoniaValidate]))) {
-    const healthyPath = `../data/val/NORMAL/${healthy.name}`
-    const sickPath = `../data/val/PNEUMONIA/${sick.name}`
+    const healthyPath = `./data/val/NORMAL/${healthy.name}`
+    const sickPath = `./data/val/PNEUMONIA/${sick.name}`
 
     const healthyFile = fs.readFile(healthyPath)
     const sickFile = fs.readFile(sickPath)
