@@ -29,7 +29,7 @@ Accuracy vs Epoch & Loss vs Epoch
 
 0.9375 final validation accuracy
 
-0.9828 final trainging accuracy
+0.9828 final training accuracy
 
 
 ## Data
