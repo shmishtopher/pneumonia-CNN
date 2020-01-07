@@ -3,31 +3,29 @@ Scanning chest x-rays for pneumonia using a deep convolutional network
 
 
 ## Example
-<img src="images/HEALTHY.jpeg" width="300px" height="300px" />
-<img src="images/SICK.jpeg" width="300px" height="300px" />
+<p float="left">
+  <img src="images/HEALTHY.jpeg" width="300px" height="300px" />
+  <img src="images/SICK.jpeg" width="300px" height="300px" />
+</p>
 
 A healthy and diseased x-ray next to each other.
 
 
 ## Training results
-Accuracy vs Batch
+Accuracy vs Batch & Loss vs Batch
 
-<img src="images/batch_acc.svg" width="300px" />
-
-
-Loss vs Batch
-
-<img src="images/batch_loss.svg" width="300px" />
+<p float="left">
+  <img src="images/batch_acc.svg" width="300px" />
+  <img src="images/batch_loss.svg" width="300px" />
+</p>
 
 
-Accuracy vs Epoch
+Accuracy vs Epoch & Loss vs Epoch
 
-<img src="images/epoch_acc.svg" width="300px" />
-
-
-Loss vs Epoch
-
-<img src="images/epoch_loss.svg" width="300px" />
+<p float="left">
+  <img src="images/epoch_acc.svg" width="300px" />
+  <img src="images/epoch_loss.svg" width="300px" />
+</p>
 
 0.9375 final validation accuracy
 
