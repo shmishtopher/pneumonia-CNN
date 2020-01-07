@@ -1,7 +1,7 @@
 {
   "name": "pneumonia-cnn",
   "version": "1.0.0",
-  "description": "",
+  "description": "Detect pneumonia in chest x-ray images using a deep convolutional network",
   "main": "main.js",
   "type": "module",
   "scripts": {
